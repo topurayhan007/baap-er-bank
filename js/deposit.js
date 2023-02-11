@@ -5,6 +5,11 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   const depostField = document.getElementById("deposit-field");
   const depositAmount = depostField.value;
 
+  if (isNaN(parseFloat(depositAmount))) {
+    alert("Please provide an amount!");
+    return;
+  }
+
   // step 3: get the current deposit total
   // for non-input (element other than input, textarea) use innerText to get the text
   const depositTotalELement = document.getElementById("deposit-total");
