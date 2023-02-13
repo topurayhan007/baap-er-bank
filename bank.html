@@ -11,14 +11,16 @@
   </head>
   <body class="bg-zinc-50">
     <header>
-      <h1 class="text-5xl text-center mt-20">
+      <h1 class="text-4xl md:text-5xl text-center mt-20">
         Let's get some
         <span class="font-semibold text-violet-500">Moooooney</span>!!!
       </h1>
     </header>
     <main>
       <section class="mt-12">
-        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+        <div
+          class="grid md:grid-cols-3 gap-4 w-11/12 md:10/12 lg:w-9/12 mx-auto text-white"
+        >
           <div class="bg-green-400 p-8 rounded-xl">
             <h4 class="text-2xl font-medium mb-3">Deposit</h4>
             <h2 class="text-5xl">
@@ -39,12 +41,14 @@
           </div>
         </div>
       </section>
-      <section class="mt-12 mb-12">
-        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+      <section class="mt-12 mb-20">
+        <div
+          class="grid md:grid-cols-2 gap-4 w-11/12 md:10/12 lg:w-9/12 mx-auto text-white"
+        >
           <div class="bg-fuchsia-400 p-8 rounded-xl">
             <h4 class="text-2xl font-medium mb-5">Please Deposit</h4>
             <input
-              class="w-9/12 block mb-3 px-3 text-black rounded-lg py-2 focus:ring focus:ring-fuchsia-600 focus:outline-none"
+              class="w-full lg:w-9/12 block mb-3 px-3 text-black rounded-lg py-2 focus:ring focus:ring-fuchsia-600 focus:outline-none"
               id="deposit-field"
               type="number"
               placeholder="$ Amount you want to deposit"
@@ -59,7 +63,7 @@
           <div class="bg-sky-400 p-8 rounded-xl">
             <h4 class="text-2xl font-medium mb-5">Please Withdraw</h4>
             <input
-              class="w-9/12 block mb-3 px-3 text-black rounded-lg py-2 focus:ring focus:ring-sky-600 focus:outline-none"
+              class="w-full lg:w-9/12 block mb-3 px-3 text-black rounded-lg py-2 focus:ring focus:ring-sky-600 focus:outline-none"
               id="withdraw-field"
               type="number"
               placeholder="$ Amount you want to withdraw"
