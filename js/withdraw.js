@@ -18,7 +18,7 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   const balanceTotalElement = document.getElementById("balance-total");
   const balanceTotal = balanceTotalElement.innerText;
 
-  if (withdrawAmount <= balanceTotal) {
+  if (parseFloat(withdrawAmount) <= parseFloat(balanceTotal)) {
     const totalWithdraw =
       parseFloat(withdrawTotal) + parseFloat(withdrawAmount);
 
